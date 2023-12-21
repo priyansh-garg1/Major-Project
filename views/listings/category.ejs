@@ -1,0 +1,84 @@
+<% layout("/layouts/boilerplate") %>
+<style>
+  #filters{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  button .filter{
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    opacity: 0.7;
+  }
+  button .filter:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .filter p {
+    font-size: 0.8rem;
+  }
+  button{
+    border: none;
+    background-color: #fff;
+  }
+</style>
+    <form method="GET" action="/listings"> 
+      <div id="filters">
+        <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-fire"></i></div>
+          <p>Trending</p>
+        </div>
+     
+        </button>
+      </form>
+        <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-bed"></i></div>
+          <p>Rooms</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-mountain-city"></i></div>
+          <p>Iconic Cities</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-mountain"></i></div>
+          <p>Moutains</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-brands fa-fort-awesome"></i></div>
+          <p>Castles</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-person-swimming"></i></div>
+          <p>Amazing Pools</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-campground"></i></div>
+          <p>Camping</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-cow"></i></div>
+          <p>Farms</p>
+        </div>
+      </button>
+      <button>
+        <div class="filter">
+          <div><i class="fa-solid fa-snowflake"></i></div>
+          <p>Arctic</p>
+        </div>
+      </button>
+      </div>
+    </button>
