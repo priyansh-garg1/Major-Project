@@ -22,7 +22,7 @@ module.exports.showListing = async (req,res) => {
         req.flash("error", "Listing you requested for does not exists");
         res.redirect("/listings");
     }
-    res.render("listings/show.ejs", { listings });
+    res.render("listings/show.ejs", { listing });
 };
 
 module.exports.createListing = async (req,res) => {
