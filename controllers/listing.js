@@ -43,7 +43,7 @@ module.exports.renderEditForm = async (req,res) => {
         req.flash("error", "Listing you requested for does not exists");
         res.redirect("/listings");
     }
-    res.redirect("listings/edit.ejs", { listing });
+    res.render("listings/edit.ejs", { listing });
 };
 
 module.exports.updateListing = async (req,res) => {
