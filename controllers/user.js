@@ -23,7 +23,7 @@ module.exports.signup = async (req,res) => {
 };
 
 module.exports.renderLoginForm = async (req,res) => {
-    res.redirect("users/login.ejs");  
+    res.render("users/login.ejs");  
 };
 
 module.exports.login = async (req,res) => {
